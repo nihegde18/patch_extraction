@@ -1,0 +1,27 @@
+name: image-processing
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - openjdk=8.0.152
+  - openslide
+  - openslide-python
+  - h5py
+  - pandas
+  - pyyaml
+  - opencv
+  - pycairo
+  - matplotlib
+  - scikit-learn
+  - shapely
+  - scipy
+  - tqdm
+  - tensorboardx
+  - jupyterlab  # or 'notebook' if you prefer
+  - pytorch
+  - torchvision
+  - pip
+  - pip:
+      - pathml
+      - git+https://github.com/TissueImageAnalytics/tiatoolbox.git@develop

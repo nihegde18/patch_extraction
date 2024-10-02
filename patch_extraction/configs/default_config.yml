@@ -1,0 +1,14 @@
+# configs/default_config.yaml
+
+input_img: "data/slides/slide1.svs"       # Path to WSI file
+patch_size: [512, 512]                     # Patch dimensions
+method: "slidingwindow"                   # Extraction method: "slidingwindow" or "point"
+stride: [512, 512]                         # Stride for sliding window
+input_mask: null                           # Path to mask image or points list for filtering patch locations
+min_mask_ratio: 0.5                        # Minimum mask coverage
+resolution: 0                              # Resolution level
+units: "level"                             # Units for resolution
+pad_mode: "constant"                       # Padding mode
+pad_constant_values: 0                     # Padding values
+within_bound: false                        # Boundary handling
+log_level: "INFO"                          # Logging level
